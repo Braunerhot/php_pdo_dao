@@ -25,12 +25,20 @@ echo $usuario;*/
 $aluno->insert();
 echo $aluno;*/
 
+// Alterar e inserir dados.
+/*$usuario = new Usuario();
+$usuario->loadById(2);
+$usuario->update("Gonçalves Dias", "lima86");
+echo $usuario;
+*/
+
 $usuario = new Usuario();
 
-$usuario->loadById(2);
+$usuario->loadById(6);
 
-$usuario->update("Gonçalves Dias", "lima86");
+$usuario->delete();
 
 echo $usuario;
+
 
 ?>
